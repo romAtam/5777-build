@@ -1,11 +1,19 @@
 import "./App.css";
-
+import { Switch, Route } from "react-router-dom";
 import Home from "./pages/";
+import SigninPage from "./pages/signin";
 
 function App() {
   return (
     <div>
-      <Home />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/signin">
+          <SigninPage />
+        </Route>
+      </Switch>
     </div>
   );
 }

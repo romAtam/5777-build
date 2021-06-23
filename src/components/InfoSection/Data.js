@@ -19,7 +19,7 @@ export const homeObjOne = {
   darkText: false,
 };
 export const homeObjTwo = {
-  id: "discover",
+  id: "Discover",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -36,7 +36,7 @@ export const homeObjTwo = {
   darkText: true,
 };
 export const homeObjthree = {
-  id: "about",
+  id: "Services",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
