@@ -23,7 +23,7 @@ export const homeObjTwo = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Premium Bank",
+  topLine: "photoshop",
   headline: "Unlimited Transactions with zero fees",
   description:
     "Get access to our exlusive app that allows you to send unlimited transactions without getting charged any fees",
