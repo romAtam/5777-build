@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
+import smile from "../../images/smile1.svg";
+import { objs } from "../InfoSection/Data";
 import {
   Nav,
   NavbarContainer,
@@ -28,6 +30,22 @@ const Navbar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+  const els = objs.map((el) => {
+    return (
+      <NavItem>
+        <NavLinks
+          to={el.id}
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+        >
+          {el.id}
+        </NavLinks>
+      </NavItem>
+    );
+  });
   return (
     <>
       <IconContext.Provider value={{ color: "red" }}>
@@ -35,61 +53,13 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             <Navlogo onClick={toggleHome} to="/">
               {" "}
-              dolla
+              <img src={smile} alt="smile" width="100" />
+              &nbsp; &nbsp;IT SMILE
             </Navlogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
-            <NavMenu>
-              <NavItem>
-                <NavLinks
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  about
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="Discover"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Discover
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="Services"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Services
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="Signup"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Sign Up
-                </NavLinks>
-              </NavItem>
-            </NavMenu>
+            <NavMenu>{els}</NavMenu>
             <NavBtn>
               <NavBtnLink to="/signin"> Sign in</NavBtnLink>
             </NavBtn>
