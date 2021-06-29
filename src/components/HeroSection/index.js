@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
+import Video from "../../videos/sto.mp4";
 import { Button } from "../ButtonElement";
 import {
   HeroContainer,
@@ -24,11 +24,8 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
-        <HeroP>
-          Sign up for a new account today and receive $250 in credit towards
-          your next payment
-        </HeroP>
+        <HeroH1>Автосервис KARtex</HeroH1>
+        <HeroP>Ремонт и техническое обслуживание авто</HeroP>
         <HeroBtnWrapper>
           <Button
             dark="true"
@@ -42,7 +39,7 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            get started{hover ? <ArrowForward /> : <ArrowRight />}
+            Запишитесь{hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
