@@ -35,7 +35,8 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             <Navlogo onClick={toggleHome} to="/">
               {" "}
-              dolla
+              KARTEX <br />
+              auto service
             </Navlogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -50,7 +51,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  about
+                  Главная
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -62,7 +63,19 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Discover
+                  Услуги
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="us"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  О нас
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -74,7 +87,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Services
+                  Контакты
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -91,7 +104,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin"> Sign in</NavBtnLink>
+              <NavBtnLink to="/signin"> Log in</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

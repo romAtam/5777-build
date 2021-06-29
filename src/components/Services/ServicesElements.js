@@ -64,6 +64,7 @@ export const ServicesH1 = styled.h1`
   }
 `;
 export const ServicesH2 = styled.h2`
+  color: orange;
   font-size: 1rem;
   margin-bottom: 10px;
 `;
