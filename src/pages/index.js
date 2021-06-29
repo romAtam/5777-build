@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Carusel from "../components/carusel";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
@@ -23,11 +24,12 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <Services />
+
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
 
       <InfoSection {...homeObjthree} />
-
+      <Carusel />
       <Footer />
     </>
   );

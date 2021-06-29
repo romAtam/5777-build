@@ -19,12 +19,27 @@ const Services = () => {
         <ServicesCard>
           <ServicesIcon src={Icon1} />
           <ServicesH2> Всего 498 грн</ServicesH2>
-          <ServicesP>Диагностика авто</ServicesP>
+          <ServicesP>ЗАМЕНА ТОРМОЗНЫХ ДИСКОВ</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
           <ServicesH2> Всего 498 грн</ServicesH2>
-          <ServicesP>ЗАМЕНА МАСЛА</ServicesP>
+          <ServicesP> ЗАМЕНА ТОРМОЗНЫХ ДИСКОВ</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon3} />
+          <ServicesH2>Всего 998 грн</ServicesH2>
+          <ServicesP>ЗАМЕНА ТОРМОЗНЫХ ДИСКОВ</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon1} />
+          <ServicesH2> Всего 498 грн</ServicesH2>
+          <ServicesP>ЗАМЕНА ТОРМОЗНЫХ ДИСКОВ</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon2} />
+          <ServicesH2> Всего 498 грн</ServicesH2>
+          <ServicesP> ЗАМЕНА ТОРМОЗНЫХ ДИСКОВ</ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />

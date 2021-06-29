@@ -39,13 +39,13 @@ export const ServicesCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  max-height: 340px;
+  max-height: 400px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.07);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
@@ -58,13 +58,13 @@ export const ServicesIcon = styled.img`
 export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 64px;
+  margin-bottom: 44px;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
 `;
 export const ServicesH2 = styled.h2`
-  color: orange;
+  color: red;
   font-size: 1rem;
   margin-bottom: 10px;
 `;

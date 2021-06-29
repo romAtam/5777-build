@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+import logimg from "../../images/logo.svg";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import {
@@ -35,8 +36,10 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             <Navlogo onClick={toggleHome} to="/">
               {" "}
-              KARTEX <br />
-              auto service
+              KARTEX
+              <img width="60" src={logimg} alt="logo" />
+              <br />
+              autoservice
             </Navlogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
