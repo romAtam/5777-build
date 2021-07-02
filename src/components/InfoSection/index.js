@@ -14,6 +14,7 @@ import {
   Column2,
   ImgWrap,
   Img,
+  Phone,
 } from "./InfoElements";
 const InfoSection = ({
   id,
@@ -30,6 +31,9 @@ const InfoSection = ({
   primary,
   dark,
   dark2,
+  mes,
+  viber,
+  adress,
 }) => {
   return (
     <>
@@ -38,12 +42,29 @@ const InfoSection = ({
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
+                <Phone>{adress}</Phone>
                 <Topline>{topLine}</Topline>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Subtitle darkText={darkText}>
+                  <div style={{ display: "flex" }}>
+                    {viber && (
+                      <img
+                        style={{ marginRight: "10px" }}
+                        width="50"
+                        src={viber}
+                        alt="viber"
+                      />
+                    )}
+                    {/* <Phone>{mes}</Phone> */}
+
+                    <h3 style={{ borderBottom: "1px solid red" }}>
+                      {description}
+                    </h3>
+                  </div>
+                </Subtitle>
                 <BtnWrap>
                   <Button
-                    to="home"
+                    to="contact"
                     smooth={true}
                     duration={500}
                     spy={true}

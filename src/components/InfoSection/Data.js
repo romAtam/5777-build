@@ -1,15 +1,16 @@
 import image1 from "../../images/car1.jpg";
 import image2 from "../../images/car2.jpg";
 import image3 from "../../images/car3.jpg";
+import viber from "../../images/viber.svg";
 export const homeObjOne = {
-  id: "about",
+  id: "garanty",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
   topLine: "100% Гарантия",
   headline:
     "Предоставляем гарантию на запчастu и выполненный ремонт авто на СТО.",
-  description: "-------------------------------",
+  description: "----",
   buttonlabel: " Запишитесь",
   imgStart: false,
   img: image1,
@@ -19,15 +20,15 @@ export const homeObjOne = {
   darkText: false,
 };
 export const homeObjTwo = {
-  id: "Discover",
+  id: "cont",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
   topLine: "Не обязываем к ремонту",
   headline:
     "После консультации, вы не обязаны выполнять ремонт авто на нашей станции.",
-  description: "-------------------------------------------",
-  buttonlabel: " Запишитесь",
+  description: "----",
+  buttonlabel: "обратный звонок ",
   imgStart: true,
   img: image2,
   alt: "piggi",
@@ -36,18 +37,21 @@ export const homeObjTwo = {
   darkText: true,
 };
 export const homeObjthree = {
-  id: "Services",
+  id: "contact",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Доставка запчастей",
-  headline: "Оригинальные запчасти будут на СТО в день обращения.",
-  description: "--------------------------------------------------------",
-  buttonlabel: " Запишитесь",
+  topLine: "контакты",
+  headline: " 098-644-00-40",
+  mes: "viber",
+  description: " 098-644-00-40 ",
+  buttonlabel: " обратный звонок",
   imgStart: false,
   img: image3,
   alt: "car",
   dark: true,
   primary: true,
   darkText: false,
+  viber: viber,
+  adress: "м.Бортничи пров.Промисловий 2Б",
 };

@@ -19,18 +19,18 @@ const HeroSection = () => {
   };
 
   return (
-    <HeroContainer id="home">
+    <HeroContainer to="home">
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Автосервис KARtex</HeroH1>
+        <HeroH1>Автосервис KAPtex</HeroH1>
         <HeroP>Ремонт и техническое обслуживание авто</HeroP>
         <HeroBtnWrapper>
           <Button
+            to="contact"
             dark="true"
             primary="true"
-            to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             smooth={true}

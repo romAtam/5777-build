@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
+import logimg from "../../images/brake.svg";
 import {
   Nav,
   NavbarContainer,
@@ -12,6 +13,7 @@ import {
   NavMenu,
   NavBtn,
   NavBtnLink,
+  Logonot,
 } from "./NavbarElements";
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -35,8 +37,15 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             <Navlogo onClick={toggleHome} to="/">
               {" "}
-              KARTEX <br />
-              auto service
+              <Logonot>KAPtex</Logonot>
+              <img
+                style={{ marginLeft: 5, marginRight: 5 }}
+                width="30"
+                src={logimg}
+                alt="logo"
+              />
+              <br />
+              <Logonot> auto service</Logonot>
             </Navlogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -44,43 +53,19 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to="about"
+                  to="garanty"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
                   offset={-80}
                 >
-                  Главная
+                  Гарантия
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="Discover"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Услуги
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="us"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  О нас
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="Services"
+                  to="contact"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -92,6 +77,30 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
+                  to="Services"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Услуги
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="usaaa"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-80}
+                  exact="true"
+                >
+                  Галерея
+                </NavLinks>
+              </NavItem>
+              {/* <NavItem>
+                <NavLinks
                   to="Signup"
                   smooth={true}
                   duration={500}
@@ -101,7 +110,7 @@ const Navbar = ({ toggle }) => {
                 >
                   Sign Up
                 </NavLinks>
-              </NavItem>
+              </NavItem> */}
             </NavMenu>
             <NavBtn>
               <NavBtnLink to="/signin"> Log in</NavBtnLink>

@@ -64,11 +64,11 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo onClick={toggleHome} to="/">
-              dolla
+            <SocialLogo style={{ color: "red" }} onClick={toggleHome} to="/">
+              KAPtex
             </SocialLogo>
             <WebsiteRights>
-              dolla c {new Date().getFullYear()} All rights reserved.
+              KAPtex c {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconsLink href="/" target="_blank" aria-label="Facebook">

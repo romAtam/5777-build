@@ -54,17 +54,18 @@ export const Topline = styled.p`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
 `;
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 400;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  @media screen and (max-width: 680px) {
+    font-size: 22px;
+    padding-left: 60px;
   }
 `;
 
@@ -82,10 +83,23 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+
+  @media screen and (max-width: 680px) {
+    margin-top: -230px;
+  }
 `;
 export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   margin-right: 0;
   border-radius: 40px;
+`;
+export const Phone = styled.h2`
+  color: #01bf71;
+  margin-right: 10px;
+  font-size: 15px;
+  border-bottom: 1px solid red;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 45px;
 `;

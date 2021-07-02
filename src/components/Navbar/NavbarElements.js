@@ -65,6 +65,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 export const NavLinks = styled(LinkS)`
+  font-weight: bold;
   color: #fff;
   display: flex;
   align-items: center;
@@ -72,8 +73,11 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  &.active {
+  transition: all 1.2s ease-in-out;
+  &:active {
+    transition: all 0.2s ease-in-out;
     border-bottom: 6px solid red;
+    color: black;
   }
 `;
 export const NavBtn = styled.nav`
@@ -99,5 +103,12 @@ export const NavBtnLink = styled(LinkR)`
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
+  }
+`;
+
+export const Logonot = styled.p`
+  @media screen and (max-width: 760px) {
+    font-size: 15px;
+    color: red;
   }
 `;
