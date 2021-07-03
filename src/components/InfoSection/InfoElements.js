@@ -93,7 +93,12 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   margin-right: 0;
   border-radius: 40px;
+  transition: all 0.6s;
+  &:hover {
+    width: 180%;
+  }
 `;
+
 export const Phone = styled.h2`
   color: #01bf71;
   margin-right: 10px;

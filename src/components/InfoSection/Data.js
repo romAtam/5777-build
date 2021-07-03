@@ -1,6 +1,7 @@
 import image1 from "../../images/car1.jpg";
 import image2 from "../../images/car2.jpg";
 import image3 from "../../images/car3.jpg";
+import googleMap from "../../images/googleMap.png";
 import viber from "../../images/viber.svg";
 export const homeObjOne = {
   id: "garanty",
@@ -47,7 +48,7 @@ export const homeObjthree = {
   description: " 098-644-00-40 ",
   buttonlabel: " обратный звонок",
   imgStart: false,
-  img: image3,
+  img: googleMap,
   alt: "car",
   dark: true,
   primary: true,

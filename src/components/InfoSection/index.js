@@ -62,7 +62,7 @@ const InfoSection = ({
                     </h3>
                   </div>
                 </Subtitle>
-                <BtnWrap>
+                {/* <BtnWrap>
                   <Button
                     to="contact"
                     smooth={true}
@@ -76,7 +76,7 @@ const InfoSection = ({
                   >
                     {buttonlabel}
                   </Button>
-                </BtnWrap>
+                </BtnWrap> */}
               </TextWrapper>
             </Column1>
             <Column2>

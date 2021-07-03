@@ -3,6 +3,8 @@ import Icon1 from "../../images/car1.jpg";
 import Icon2 from "../../images/car2.jpg";
 import Icon3 from "../../images/car3.jpg";
 import Icon4 from "../../images/teh2.jpg";
+import Icon5 from "../../images/moped.jpeg";
+import Icon6 from "../../images/pokraska.jpeg";
 import {
   ServicesContainer,
   ServicesH1,
@@ -15,7 +17,7 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id="Services">
-      <ServicesH1> услуги </ServicesH1>
+      <ServicesH1> Услуги </ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
@@ -28,12 +30,12 @@ const Services = () => {
           <ServicesP>Ремонт ходовой</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
+          <ServicesIcon src={Icon6} />
           <ServicesH2></ServicesH2>
-          <ServicesP>Рихтовка Покраска</ServicesP>
+          <ServicesP>Рихтовка, покраска</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon4} />
+          <ServicesIcon src={Icon5} />
           <ServicesH2> </ServicesH2>
           <ServicesP>Ремонт мопедов</ServicesP>
         </ServicesCard>
@@ -45,7 +47,7 @@ const Services = () => {
         <ServicesCard>
           <ServicesIcon src={Icon1} />
           <ServicesH2></ServicesH2>
-          <ServicesP>шиномонтаж</ServicesP>
+          <ServicesP>Шиномонтаж</ServicesP>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
