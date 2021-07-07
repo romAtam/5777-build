@@ -54,5 +54,5 @@ export const homeObjthree = {
   primary: true,
   darkText: false,
   viber: viber,
-  adress: "м.Бортничи пров.Промисловий 2Б",
+  adress: "м.Київ Бортничи пров.Промисловий 2Б",
 };
