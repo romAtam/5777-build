@@ -25,7 +25,7 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH2>BORTNICHI</HeroH2>
+        <HeroH2>Бортничи</HeroH2>
         <HeroH1>Автосервис KAPtex</HeroH1>
         <HeroP>Ремонт и техническое обслуживание авто</HeroP>
         <HeroBtnWrapper>
