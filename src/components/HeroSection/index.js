@@ -7,6 +7,7 @@ import {
   VideoBg,
   HeroContent,
   HeroH1,
+  HeroH2,
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
@@ -24,6 +25,7 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
+        <HeroH2>BORTNICHI</HeroH2>
         <HeroH1>Автосервис KAPtex</HeroH1>
         <HeroP>Ремонт и техническое обслуживание авто</HeroP>
         <HeroBtnWrapper>
